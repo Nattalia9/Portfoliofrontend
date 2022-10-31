@@ -1,0 +1,121 @@
+<section id="skills">
+  <div class="container-fluid py-lg-5">
+    <div class="row titulo mb-lg-5">
+      <div class="col-lg-7 titulo-section">
+        <h2 class="mb-4">Hard & Soft Skills</h2>
+        <p>
+          Conocé algunas de las competencias que pude adquirir y desarrollo, que puedo
+          aportar a un equipo de trabajo.
+        </p>
+      </div>
+    </div>
+    <div class="row skills justify-content-around pt-3">
+      <div class="col-lg-7">
+        <div>
+          <div class="d-flex title mb-4">
+            <img src="../../../assets/coding.svg" class="skill" alt="" />
+            <h4 class="ml-2 hard-skill">Habilidades técnicas</h4>
+          </div>
+        </div>
+        <div class="row sliders"><!-------------------inicio contenedor1 falla diseño *ngFor="let Habilidad of habilidad"----------------->
+          <!-----------inicio hab tecnicas------------->
+          <div class="col-lg-6 animate-box my-1" data-animate-effect="fadeInLeft">
+            <div class="progress-skill">
+              <div class="progress_bar_title d-flex justify-content-between">
+                <div class="d-flex">
+                  <h6 class=" pr-3">html</h6><!--------falla diseño {{Habilidad.habilidadTecnica}}-->
+                  <a href="#" class="btn-editar cambios icon" title="Editar Skill" alt="editar" routerLink="/editkill/" *ngIf="isLogged"> <!--------boton editar   falla {{Habilidad.id}}--------->
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="btn-eliminar cambios icon" title="Eliminar Skill" alt="eliminar" (click)="delete" *ngIf="isLogged"> <!--------boton eliminar   falla (Habilidad.id)--------->
+                    <i class="bi bi-trash3 m"></i>
+                  </a>
+                </div>
+                <span class="progress_number">80%</span><!-----{{Habilidad.nivelTecnico}}%----->
+              </div>
+              <div class="prog-bar">
+                <div class="progress-bar-inner" style="--w: 40%" data-value="" data-percentage-value=""></div><!----- {{Habilidad.nivelTecnico}}-->
+              </div>
+            </div>
+          </div>
+          <!------------fin hab tecnicas------------->
+            <!-----------inicio hab tecnicas------------->
+            <div class="col-lg-6 animate-box my-1" data-animate-effect="fadeInLeft">
+              <div class="progress-skill">
+                <div class="progress_bar_title d-flex justify-content-between">
+                  <div class="d-flex">
+                    <h6 class=" pr-3">Sociable</h6><!----{{Habilidad.habilidadTecnica}}----->
+                    <a href="#" class="btn-editar cambios icon" title="Editar Skill" alt="editar" routerLink="/editkill/" *ngIf="isLogged"> <!--------boton editar routerLink="/editkill/{{Habilidad.id}}" *ngIf="isLogged"--------->
+                      <i class="bi bi-pencil"></i>
+                    </a>
+                    <a href="#" class="btn-eliminar cambios icon" title="Eliminar Skill" alt="eliminar" (click)="delete" *ngIf="isLogged"> <!--------boton eliminar (click)="delete(Habilidad.id)" *ngIf="isLogged"--------->
+                      <i class="bi bi-trash3 m"></i>
+                    </a>
+                  </div>
+                  <span class="progress_number">40%</span><!------{{Habilidad.nivelTecnico}}------>
+                </div>
+                <div class="prog-bar">
+                  <div class="progress-bar-inner" style="--w: 70%" data-value="" data-percentage-value=""></div><!-------{{Habilidad.nivelTecnico}}-->
+                </div>
+              </div>
+            </div>
+            <!------------fin hab tecnicas------------->
+        </div><!------------------fin contenedor 1-------------------->
+      </div>
+      <!--seccion habilidades personales-->
+      <div class="col-lg-3 justify-content-between right-skill">
+        <div>
+          <div class="d-flex title mb-4">
+            <span class="material-symbols-outlined hand"> handshake </span>
+            <h4 class="soft-skill">Habilidades personales</h4>
+          </div>
+        </div>
+        <div class="row justify-content-between py-2 mt-n4 rounded soft" ><!----------------contenedor2 falla *ngFor="let Habilidad of habilidad"---------------->
+          <!-------------inicio hab personal---------------->
+          <div class="col-6 col-sm-3 col-lg-6 text-center circle">
+            <circle-progress
+              [percent]="90"
+              [radius]="33"
+              [outerStrokeWidth]="6"
+              [innerStrokeWidth]="2"
+              [outerStrokeColor]="'#B562FB'"
+              [innerStrokeColor]="'#464c85'"
+              [backgroundColor]="'#1B1D36'"
+              [backgroundPadding]="-10"
+              [space]="4"
+              [titleFontSize]="'15'"
+              [titleFontWeight]="'400'"
+              [titleColor]="'#D1D2D7'"
+              [unitsColor]="'#D1D2D7'"
+              [showSubtitle]="false"
+              [unitsFontSize]="'15'"
+              [animation]="true"
+              [animateTitle]="false"
+              [animationDuration]="1700"
+            ></circle-progress>
+            <div>
+              <h5 class="text-center mt-2 mb-0">Sociable</h5>
+            </div>
+
+            <div class="">
+              <a href="#" class="btn-editar cambios px-1" title="Editar Skill" alt="editar" routerLink="/editkill/" *ngIf="isLogged" > <!-----------boton editar   falla routerLink="/editkill/{{Habilidad.id}}" *ngIf="isLogged"--------->
+                <i class="bi bi-pencil"></i>
+              </a>
+              <a href="#" class="btn-eliminar cambios px-1" title="Eliminar Skill" alt="eliminar" (click)="delete" *ngIf="isLogged"> <!-----------boton eliminar   falla (click)="delete(Habilidad.id)" *ngIf="isLogged"--------->
+                <i class="bi bi-trash3 m"></i>
+              </a>
+            </div>
+          </div>
+          <!------------fin hab personal------------>
+        </div> <!----------------fin contenedor2---------------->
+      </div>
+    </div>
+    <!--botones de edicion-->
+      <div class="col text-center">
+        <a href="" class="btn-agregar add"  title="Agregar Skill" alt="agregar" routerLink="/newskill" *ngIf="isLogged">   <!-----------boton agregar--------->
+          <i class="bi bi-plus-square"></i>
+        </a>
+      </div>
+    <!--fin botones de edicion-->
+  </div>
+</section>

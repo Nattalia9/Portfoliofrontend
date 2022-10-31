@@ -1,0 +1,242 @@
+section {
+  background-color: #1b1d36;
+  padding-top: 3rem;
+}
+
+h2 {
+  font-family: "mersadmedium";
+  font-size: 5rem;
+  color: #fffff3;
+  letter-spacing: -0.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+h6 {
+  font-family: "manropemedium";
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 1.1rem;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.card-header {
+  background: none !important;
+  border-bottom: 2px solid #464c85;
+}
+
+.first {
+  border-top: 1px solid #464c85;
+}
+
+.card {
+  background: none !important;
+  border: none;
+}
+
+.btn::after {
+  content: "\2212";
+  width: 35px;
+  font-size: 25px;
+  top: 12px;
+  position: absolute;
+  color: #00e1c6;
+}
+
+.btn.collapsed::after {
+  content: "\002B";
+  width: 35px;
+  font-size: 25px;
+  top: 12px;
+  position: absolute;
+  color: #00e1c6;
+}
+
+/*.title-section {
+  margin-left: 2rem;
+}*/
+
+.indice {
+  font-family: "manropethin";
+  font-size: 2.5rem;
+  color: #b562fb;
+  float: left;
+  align-self: center;
+}
+
+.ed {
+  font-family: "manroperegular";
+  font-size: 1.6rem;
+  color: #fff;
+  align-self: center;
+}
+
+.card-body {
+  color: #fff;
+}
+
+.pri {
+  font-family: "manroperegular";
+  font-size: 1.6rem;
+}
+
+/*.campos {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding-left: 65px;
+  
+}*/
+
+
+
+/*.fecha {
+  padding-top: 2rem;
+}*/
+
+.instituto {
+  /*padding-bottom: 10px;*/
+  border-bottom: 2px solid #464c85;
+}
+
+.titulo {
+  border-bottom: 2px solid #464c85;
+}
+
+.frelo {
+  border-right: 2px solid #464c85;
+  /*margin: 0px;*/
+}
+
+.dos {
+  /*border-bottom: 2px solid #464c85;*/
+  /*width: 85rem;*****/
+  /*padding-bottom: 22px;*/
+  justify-content: center;
+}
+
+p {
+  font-family: "manroperegular";
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*.divisor {
+  height: 2px;
+  width: 390px;
+  background-color: #464c85;
+  position: absolute;
+}*/
+
+
+/****/
+
+.card-body {
+  background-color: #212341;
+  /*padding-bottom: 0px;*/
+  /*padding-left: 2.4rem;//////////*/
+  border-bottom: 2px solid #464c85;
+}
+
+.accordion {
+  border-top: 1px solid #464c85;
+}
+
+/*****/
+
+@media (max-width: 575.98px) { /****/
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+    padding-top: 0rem;
+  }
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4.5rem;  
+  }
+
+  .title-section{
+    margin-left: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
+
+  .title-section{
+    margin-left: 9.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title-section{
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 767.98px)  { /****/
+  section {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {/*****/
+  .frelo{
+    border-right: none;
+  }
+
+  .fecha{
+    border-bottom: 2px solid #464c85;
+  }
+
+  section {
+    padding-top: 1.5rem;
+  }
+}
+
+/*****botones de modificaciones*****/
+
+.add{
+  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.7);
+}
+
+.add:hover{
+  color:#00e1c6;
+}
+
+.modif{
+  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
+  margin-left: 7px;
+}
+
+.modif:hover{
+  color:#00e1c6;
+}

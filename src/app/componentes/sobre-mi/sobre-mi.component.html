@@ -1,0 +1,24 @@
+<section id="sobre-mi">
+  <div class="container-fluid pl-lg-0"><!--pl-0-->
+    <div class="row">
+      <div class="col-lg-5 img ">
+        <img class="img-fluid" src="{{persona.urlFotoPerfil}}" alt=""/><!--foto perfil-->
+      </div>
+      <div class="col-lg-6 titulo-section">
+        <h2>Sobre Mí</h2>
+        <span><img class="arrow-down" src="../../../assets/arrow-left.svg" alt=""/></span>
+        <p>
+          {{persona.descripcion}}
+        </p>
+        <div class="d-flex justify-content-between">
+          <a class="nav-link" href="{{persona.urlPortfolioPdf}}" class="curriculum">Descargar CV</a> <!--*ngIf="!isLogged"-->
+          <div class="text-center pt-2">
+            <a href="#" class="btn-editar cambios" title="Editar Sobre Mi" alt="editar" routerLink="/editsobrem/{{persona.id}}" *ngIf="isLogged"> <!-------------boton-editar---------->
+              <i class="bi bi-pencil"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

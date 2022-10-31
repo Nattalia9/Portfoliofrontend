@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row align-items-center one">
+    <div class="col-lg-1 align-self-center">
+      <div class="d-none d-lg-block">
+        <p class="hashtag mx-auto mt-5">#YoProgramo</p>
+      </div>
+    </div>
+    <div class="col-lg-4 pl-0"><!--al costado  izq de developer-->
+      <div class="img-arc d-none d-xl-block">
+        <img class="arco" src="../../../assets/circulo-fin.svg" alt="" />
+      </div>
+      <div class="conta mb-5 pl-4 px-lg-0 mx-lg-0 align-self-center">
+        <h3 class="mt-2 mt-lg-5">Hola, soy {{persona.nombre}} {{persona.apellido}}</h3>
+        <h1 class="display-3 ml-n1">{{persona.profesion}}</h1>
+        <hr/>
+        <!--botones de edicion-->
+  <div class="col-lg-3 modificadores text-left px-0 d-flex">
+    <a href="#" class="btn-editar cambios" title="Editar Header" alt="editar" routerLink="/editheader/{{persona.id}}" *ngIf="isLogged"> <!-------boton editar---------->
+      <i class="bi bi-pencil"></i>
+    </a>
+  </div>
+<!--fin botones de edicion-->
+      </div>
+    </div>
+    <div class="col-lg-7 px-0 pl-lg-3">
+      <img src="{{persona.urlBanner}}" class="img-fluid shadow-lg" alt="banner"/>
+    </div>
+  </div>
+  <div class="row borde">
+    <div class="col-0 col-md-1 d-none d-md-block pin">
+      <div class="d-flex h-100">
+        <div class="align-self-center mx-auto mb-3">
+          <span><i class="bi bi-geo-alt location"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-8 d-none d-md-block">
+      <div class="d-flex h-100">
+        <div class="align-self-center px-5">
+          <p class="text-gray prov">{{persona.provincia}} - Argentina</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 col-md-3 d-none d-md-block fecha">
+      <div class="d-flex h-100">
+        <div class="align-self-center px-5">
+          <p class="text-gray anio">2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

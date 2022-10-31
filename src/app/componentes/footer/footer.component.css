@@ -1,0 +1,88 @@
+.container-fluid {
+  background-color: #1b1d36;
+}
+
+.top {
+  border-top: 1px solid #464c85;
+}
+
+h4 {
+  font-family: "manropemedium";
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h6 {
+  font-family: "manropemedium";
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+p {
+  font-family: "manroperegular";
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+span {
+  margin-top: -0.3rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+.mail {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: -3px;
+  padding-left: 0.5rem;
+}
+
+.sm-iconos {
+  flex-direction: row;
+  text-align: center;
+  padding-top: 5.6rem;
+  justify-content: center;
+}
+
+.sm-iconos .nav-link {
+  padding-right: 1.7rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.location {
+  padding-top: 6.5rem;
+}
+
+.p-right {
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+
+.derecha{
+  text-align: center;   
+}
+
+.izquierda{
+  display: none;
+}
+
+.sm-iconos,.location {
+  padding-top: 1rem;
+}
+
+}
+
+/*****botones de modificaciones*****/
+
+.cambios{
+  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.7);
+  /*padding: 0rem 0.5rem;*/
+}
+
+.cambios:hover{
+  color:#00e1c6;
+}

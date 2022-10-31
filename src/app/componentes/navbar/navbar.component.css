@@ -1,0 +1,65 @@
+.navbar {
+  min-height: 4.275rem;
+  border-bottom: 1px solid #464c85;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu-nav {
+  width: 35px;
+}
+
+.nav-link {
+  font-family: "manroperegular" !important;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.logo-nav {
+  max-width: 100px;
+}
+
+.bg-azul {
+  background-color: #1b1d36;
+}
+
+.sm-iconos {
+  flex-direction: row;
+  text-align: center;
+}
+
+.sm-iconos .nav-link {
+  padding-right: 0.4rem;
+}
+
+.login .nav-login {
+  border: 2px solid #00e1c6;
+  border-radius: 2rem;
+  padding: 5px 18px;
+  text-decoration: none;
+  color: white;
+  font-family: "manroperegular" !important;
+  font-size: 1rem;
+}
+
+.login .nav-login:hover {
+  background-color: #00e1c6;
+  border-radius: 2rem;
+  padding: 5px 18px;
+  text-decoration: none;
+  color: #1b1d36;
+  font-family: "manropemedium" !important;
+}
+
+@media (max-width: 768px) {
+  /**ver despues margen derecho de menu responsive*/
+  .navbar {
+    padding-right: 10px;
+  }
+}
+

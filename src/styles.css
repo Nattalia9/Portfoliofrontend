@@ -1,0 +1,53 @@
+/****mersad****/
+@font-face {
+  font-family: 'mersadmedium';
+  src: url('assets/fonts/mersad_medium-webfont.woff2') format('woff2'),
+       url('assets/fonts/mersad_medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/****manrope****/
+
+@font-face {
+  font-family: 'manropemedium';
+  src: url('assets/fonts/medium-webfont.woff2') format('woff2'),
+       url('assets/fonts/medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'manroperegular';
+  src: url('assets/fonts/regular-webfont.woff2') format('woff2'),
+       url('assets/fonts/regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'manropesemibold';
+  src: url('assets/fonts/semibold-webfont.woff2') format('woff2'),
+       url('assets/fonts/semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'manropethin';
+  src: url('assets/fonts/thin-webfont.woff2') format('woff2'),
+       url('assets/fonts/thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scroll {
+  /*ver no funciona*/
+  scroll-behavior: smooth;
+}

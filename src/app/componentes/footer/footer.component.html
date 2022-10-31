@@ -1,0 +1,31 @@
+<div class="container-fluid py-3">
+  <div class="row top justify-content-around pb-4">
+    <div class="col-lg-2 mt-5 mb-1 izquierda">
+      <div class="logo-name d-flex pb-2"> <!--mx-sm-auto mx-lg-0-->
+        <img src="../../../assets/logo-natalia.svg" class="logo" alt=""/>
+        <h4 class="pt-3">{{persona.nombre}} {{persona.apellido}}</h4>
+      </div>
+      <div class="correo d-flex">
+        <span class=""><i class="bi bi-envelope mail"></i>></span>
+        <p class="">{{persona.email}}</p>
+      </div>
+    </div>
+    <div class="col-lg-5 centro">
+      <div class="navbar-nav pl-2 sm-iconos">
+        <a class="nav-link" href="https://www.instagram.com/nattalia.9g/" title="Instagram" target="_blank">
+          <i class="fa-brands fa-instagram p-right"></i>Instagram</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/natalia-rueda-a43300255/" title="Linkedin" target="_blank">
+          <i class="fa-brands fa-linkedin-in p-right"></i>Linkedin</a>
+        <a class="nav-link" href="https://github.com/Nattalia9" title="Github" target="_blank">
+          <i class="fa-brands fa-github p-right"></i>Github</a>
+        <a class="nav-link" href="https://codepen.io/Nattalia9" title="CodePen" target="_blank">
+          <i class="fa-brands fa-codepen p-right"></i>CodePen</a>
+      </div>
+    </div>
+    <div class="col-lg-2 mb-1 derecha">
+      <p class="location">© 2022 {{persona.provincia}} - Argentina</p>
+    </div> 
+  </div>
+</div>
+
+<app-scroll-top></app-scroll-top>

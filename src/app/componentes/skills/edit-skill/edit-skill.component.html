@@ -1,0 +1,59 @@
+<section class="background-radial-gradient overflow-hidden" *ngIf="hab">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-lg-2">
+      <div class="row gx-lg-5 align-items-center mb-5 mt-md-4 mt-lg-1"><!--mb-5 mt-md-4 mt-lg-5-->
+        <div class="col-lg-6 mb-5 mb-lg-0 text-left text">
+          <h2 class="my-3">Estas en:</h2>
+          <h1 class="my-3 display-5 fw-bold ls-tight">
+            Hard & Soft Skills  
+          </h1 >
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate><!--------------------------form------------------------------->
+                <!-- Titulo -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-login text-left">
+                      <h2 class="titulo-login">Editar Habilidad</h2>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Hab tec -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="habilidadTecnica">Habilidad técnica</label>
+                  <input type="text" id="habilidadTecnica" class="form-control" name="habilidadTecnica" [(ngModel)]="hab.habilidadTecnica">
+                </div>
+  
+                <!-- Nivel tec -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="nivelTecnico">Nivel técnico</label>
+                  <input type="text" id="nivelTecnico" class="form-control" name="nivelTecnico" [(ngModel)]="hab.nivelTecnico">
+                </div>
+
+                <!-- hab pers -->
+                <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="habilidadPersonal">Habilidad personal</label>
+                    <input type="text" id="habilidadPersonal" class="form-control" name="habilidadPersonal" [(ngModel)]="hab.habilidadPersonal">
+                  </div>
+    
+                  <!-- nivel hab per input -->
+                  <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="nivelHabPersonal">Nivel habilidad personal</label>
+                    <textarea id="nivelHabPersonal" class="form-control" rows="3" name="nivelHabPersonal" [(ngModel)]="hab.nivelHabPersonal"></textarea> 
+                  </div>
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn-block mb-4 mt-5">
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

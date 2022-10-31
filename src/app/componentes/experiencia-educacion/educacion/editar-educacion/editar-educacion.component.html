@@ -1,0 +1,74 @@
+<!--<div class="container-exp" *ngIf="educ">
+    <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate>
+        <label for="puesto">Titulo:</label>
+        <input type="text" placeholder="Titulo" id="titulo" name="titulo" [(ngModel)]="educ.titulo" required>
+        <br>
+        <input type="text" placeholder="Institucion" id="institucion" name="institucion" [(ngModel)]="educ.institucion" required>
+        <br>
+        <input type="text" placeholder="Fecha" id="fecha" name="fecha" [(ngModel)]="educ.fecha" required>
+        <br>
+        <textarea placeholder="Descripción" id="descripcion" name="descripcion" [(ngModel)]="educ.descripcion" required></textarea>
+        <br>
+        <button type="submit">Agregar</button>
+    </form>
+</div>-->
+
+<section class="background-radial-gradient overflow-hidden" *ngIf="educ">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-lg-2">
+      <div class="row gx-lg-5 align-items-center mb-5 mt-md-4 mt-lg-1"><!--mb-5 mt-md-4 mt-lg-5-->
+        <div class="col-lg-6 mb-5 mb-lg-0 text-left text">
+          <h2 class="my-3">Estas en:</h2>
+          <h1 class="my-3 display-5 fw-bold ls-tight">
+            Educación
+          </h1 >
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form #f="ngForm" (ngSubmit)="onUpdate()" novalidate><!--------------------------form------------------------------->
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-login text-left">
+                      <h2 class="titulo-login">Editar Educación</h2>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Puesto input -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="titulo">Título obtenido</label>
+                  <input type="text" id="titulo" class="form-control" name="titulo" [(ngModel)]="educ.titulo" required> 
+                </div>
+  
+                <!-- Empresa input -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="institucion">Institución</label>
+                  <input type="text" id="institucion" class="form-control" name="institucion" [(ngModel)]="educ.institucion" required> 
+                </div>
+
+                <!-- Fecha input -->
+                <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="fecha">Fecha</label>
+                    <input type="text" id="fecha" class="form-control" name="fecha" [(ngModel)]="educ.fecha" required> 
+                  </div>
+    
+                  <!-- Descripción input -->
+                  <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="descripcion">Descripción</label>
+                    <textarea id="descripcion" class="form-control" rows="3" name="descripcion" [(ngModel)]="educ.descripcion" required></textarea>
+                  </div>
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn-block mb-4 mt-5">
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

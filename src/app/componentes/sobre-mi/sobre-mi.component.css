@@ -1,0 +1,145 @@
+section {
+  background-color: #1b1d36;
+  /*padding: 12rem 0rem;*/ 
+  padding: 6rem 0;
+}
+
+.container-fluid{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+}
+
+h2 {
+  font-family: "mersadmedium";
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  letter-spacing: -0.2rem;
+}
+
+p {
+  font-family: "manroperegular";
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7); 
+  padding-bottom: 2rem;
+}
+
+.titulo-section{
+  margin-left: 5rem;
+}
+
+.arrow-down {
+  margin-left: 55px;
+  margin-bottom: 25px;
+  width: 100px;
+  color: #00e1c6;
+}
+
+.curriculum {
+  font-family: "manroperegular" !important;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid #00e1c6;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  /*margin-left: 5rem;*/
+}
+
+.curriculum:hover {
+  font-family: "manropemedium" !important;
+  background-color: #00e1c6;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #1b1d36;
+}
+
+@media (max-width: 991px) {
+  .img {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+/**********/
+@media (max-width: 575.98px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4.5rem;  
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1400px) {/***/
+
+}
+
+@media (max-width: 991.98px) {
+  .titulo-section{
+    /*text-align: center;*/
+    /*text-align: center;*/
+    padding-top: 4rem;
+    /*margin-left: 0.9rem;*/
+    margin: 0rem 1rem;
+  }
+
+  span{
+    display: none;
+  }
+
+  section{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .container-fluid{
+    padding-top: 1.5rem;
+  }
+
+}
+
+@media (max-width: 1199px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container-fluid{
+    padding-top: 1.5rem;
+  } 
+}
+
+/*****botones de modificaciones*****/
+
+.cambios{
+  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.7);
+  /*padding: 0rem 0.5rem;*/
+}
+
+.cambios:hover{
+  color:#00e1c6;
+}

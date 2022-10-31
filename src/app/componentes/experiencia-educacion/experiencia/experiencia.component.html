@@ -1,0 +1,50 @@
+<section id="experiencia">
+  <div class="container-fluid py-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 mb-5 pt-3 titulo-section">
+        <h2 class="text-center">Experiencia Laboral</h2>
+      </div>
+    </div>
+    <div class="contenedor-expe pb-5" *ngFor="let Experiencia of expe"><!--contenedor de todas las experiencias-->
+      <!-------------experiencia inicio----------------->
+      <div class="row justify-content-center">
+        <div class="col-lg-7 mx-2 my-2 bg-blue">
+          <div class="row text-center">
+            <div class="col text-center titulo">
+              <div class="d-flex justify-content-center cargo">
+                <img src="../../../../assets/vector.svg" class="graphicIcon" alt=""/>
+                <h3>{{Experiencia.puesto}}</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center dos py-4">
+            <div class="col-md-4 frelo">
+            <div class="h-50 free"><h6>{{Experiencia.empresa}}</h6></div>
+              <div class="h-50 fecha"><h6>{{Experiencia.fecha}}</h6></div>
+            </div>
+            <div class="col-md-8 desc">
+              <p class="py-3 text-left px-1 text">
+                {{Experiencia.descripcion}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <!--botones de edicion-->
+        <div class="col justify-content-center text-center">
+          <a href="" class="btn-agregar cambios" title="Agregar Experiencia" alt="agregar" routerLink="/nuevaexp" *ngIf="isLogged"> <!--boton crear-->
+            <i class="bi bi-plus-square"></i>
+          </a>
+          <a href="#" class="btn-editar cambios" title="Editar Experiencia" alt="editar" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><!--boton editar-->
+            <i class="bi bi-pencil"></i>
+          </a>
+          <a href="#" class="btn-eliminar cambios" title="Eliminar Experiencia" alt="eliminar" (click)="delete(Experiencia.id)" *ngIf="isLogged"><!--boton eliminar-->
+            <i class="bi bi-trash3 m"></i>
+          </a>
+        </div>
+        <!--fin botones de edicion-->
+      </div>
+      <!--------------------Experiencia fin----------------->
+    </div>
+ </div>
+</section>

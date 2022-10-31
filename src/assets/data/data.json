@@ -1,0 +1,13 @@
+{
+    "nombre": "Natalia Rueda",
+    "banner": "assets/banner2.jpg",
+    "profesion": "Full Stack developer Jr",
+
+    "escuela": {
+        "nombre": "Universidad de Buenos Aires",
+        "carrera": "Diseño Gráfico"
+    },
+
+    "ubicacion": "Buenos Aires-Argentina",
+    "foto": "assets/foto.png"  
+}

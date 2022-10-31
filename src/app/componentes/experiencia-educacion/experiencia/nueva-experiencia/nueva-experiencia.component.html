@@ -1,0 +1,60 @@
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-lg-2">
+      <div class="row gx-lg-5 align-items-center mb-5 mt-md-4 mt-lg-1"><!--mb-5 mt-md-4 mt-lg-5-->
+        <div class="col-lg-6 mb-5 mb-lg-0 text-left text">
+          <h2 class="my-3">Estas en:</h2>
+          <h1 class="my-3 display-5 fw-bold ls-tight">
+            Experiencia Laboral 
+          </h1 >
+        </div>
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-glass">
+            <div class="card-body px-4 py-5 px-md-5">
+              <form #f="ngForm" (ngSubmit)="onCreate()" novalidate> <!--------------------------form------------------------------->
+                <!--titulo -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-login text-left">
+                      <h2 class="titulo-login">Nueva Experiencia</h2>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Puesto input -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="puesto">Puesto Laboral</label>
+                  <input type="text" id="puesto" class="form-control" name="puesto" [(ngModel)]="puesto" required>
+                </div>
+  
+                <!-- Empresa input -->
+                <div class="form-outline mb-4 text-left">
+                  <label class="form-label" for="empresa">Empresa</label>
+                  <input type="text" id="empresa" class="form-control" name="empresa" [(ngModel)]="empresa" required>
+                </div>
+
+                <!-- Fecha input -->
+                <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="fecha">Fecha</label>
+                    <input type="text" id="fecha" class="form-control" name="fecha" [(ngModel)]="fecha" required> 
+                  </div>
+    
+                  <!-- Descripción input -->
+                  <div class="form-outline mb-4 text-left">
+                    <label class="form-label" for="descripcion">Descripción</label>
+                    <textarea id="descripcion" class="form-control" rows="3" name="descripcion" [(ngModel)]="descripcion" required></textarea >
+                  </div>
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn-block mb-4 mt-5">
+                  Crear
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

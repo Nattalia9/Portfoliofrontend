@@ -1,0 +1,254 @@
+@media (min-width: 576px) {
+  .container-fluid {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1190px;
+  }
+}
+/******/
+
+section {
+  background-color: #1b1d36;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-family: "mersadmedium";
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+  color: #fff;
+  letter-spacing: -0.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: "manroperegular";
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4rem;
+}
+
+p {
+  font-family: "manroperegular";
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h6 {
+  font-family: "manroperegular";
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h4 {
+  font-family: "manroperegular";
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.progress-skill .prog-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+  height: 6px;
+  margin-bottom: 12px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.progress-skill .progress_bar_title {
+  color: hsl(218, 4%, 50%);
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-skill .progress_number {
+  font-family: "manroperegular";
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.progress-skill .icon {
+  margin-top: -5px;
+  margin-right: 7px;
+}
+
+.progress-skill .progress-bar-inner {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  width: var(--w);
+  background: #b562fb;
+  animation: Aumentar 2s ease;
+}
+
+@keyframes Aumentar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--w);
+  }
+}
+
+.progress-skill .progress-bar-inner:before {
+  content: "";
+  background: #b562fb;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  z-index: 1;
+}
+
+.soft{
+  background-color: #212341;
+}
+
+.title {
+  color: #fff;
+  border-bottom: 1px solid #464c85;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 
+  "FILL" 0, 
+  "wght" 100, 
+  "GRAD" 0, 
+  "opsz" 48;
+}
+.hand {
+  font-size: 40px;
+  position: relative;
+  margin-right: 7px;
+  top: -10px;
+}
+
+.soft-skill {
+  margin-right: 16px;
+}
+
+.skill {
+  height: 32px;
+  position: relative;
+  margin-right: 3px;
+  top: -10px;
+}
+
+.hard-skill{
+  padding-bottom:11px;
+}
+
+.sliders {
+  margin-top: 30px;
+}
+
+@media (max-width: 575.98px) {/***/
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+    padding-top: none;
+  }
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4.5rem;  
+  }
+
+  .titulo-section{
+    margin-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 5rem;
+  }
+
+  .titulo-section{
+    margin-left: 3.1rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px)  { /****/
+  section {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .right-skill {
+    padding-top: 3rem;
+  }
+
+  section {
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.cambios{
+  font-size: 1rem;
+  color:rgba(255, 255, 255, 0.7); 
+}
+
+.cambios:hover{
+  color:#00e1c6;
+}
+
+.add{
+  color:rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.add:hover{
+  color:#00e1c6;
+}

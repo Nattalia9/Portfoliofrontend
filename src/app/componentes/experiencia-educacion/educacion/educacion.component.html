@@ -1,0 +1,66 @@
+<section id="educacion">
+  <div class="container-fluid pt-5 pb-1">
+    <div class="row my-4">
+      <div class="col-lg-7 mb-2 title-section">
+          <h2>Educación</h2>
+      </div>
+    </div>
+    <div class="row my-5 justify-content-end pl-lg-5">
+      <div class="col-lg-11">
+        <div class="accordion" id="accordionExample" *ngFor="let Educacion of educ">
+          <!--inicio experiencia-->
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <!--justify-content-between-->
+              <div class="d-flex">
+                <h3 class="pr-3 indice">{{Educacion.id}}.</h3><!--pl-2 solo-->
+                <h3 class="ed mb-0">{{Educacion.titulo}}</h3>
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn-editar modif" title="Editar Educación" alt="editar" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"><!---------------editar-->
+                <i class="bi bi-pencil"></i>
+              </a>
+              <a href="#" class="btn-eliminar modif" title="Eliminar Educación" alt="eliminar" (click)="delete(Educacion.id)" *ngIf="isLogged"><!------------eliminar-->
+                <i class="bi bi-trash3 m"></i>
+              </a>
+              <a href="#todo" 
+                class="btn collapsed" type="button" data-toggle="collapse" aria-expanded="true" >
+              </a>
+              </div>
+            </div>
+            <div id="todo" class="collapse" data-parent="#accordionExample" ><!-----ver id="{{Educacion.id}}" no funciona----->
+              <div class="card-body">
+                <!--parte interna-->
+                <div class="row dos">
+                  <div class="col-lg-4 frelo"><!--col-md-4-->
+                    <div class="h-50 campos instituto">
+                      <h6>{{Educacion.institucion}}</h6>
+                    </div>
+                    <!--<div class="divisor pt-0"></div>-->
+                    <div class="h-50 campos fecha">
+                      <h6>{{Educacion.fecha}}</h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 ml-lg-5"><!--col-md-6-->
+                    <p class="py-3 ">
+                      {{Educacion.descripcion}}
+                    </p>
+                  </div>
+                </div>
+                <!--fin parte interna-->
+              </div>
+            </div>
+          </div>
+          <!--fin de experiencia-->
+        </div>
+      </div>
+    </div>
+    <!--botones de edicion-->
+      <div class="col text-center mt-n3">
+        <a href="" class="btn-agregar"  title="Agregar Educación" alt="agregar" routerLink="/nuevaedu" *ngIf="isLogged"><!-----------boton agregar---------->
+          <i class="bi bi-plus-square add"></i>
+        </a>
+      </div>
+    <!--fin botones de edicion-->
+  </div>
+</section>
