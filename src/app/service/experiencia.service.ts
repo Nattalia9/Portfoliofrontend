@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  expURL = 'https://porttfolio-nr.herokuapp.com/experiencia/'
+  expURL = 'https://backend-nr.herokuapp.com/experiencia/'
   /*expURL = 'http://localhost:8080/experiencia/'*/
 
   constructor(private httpClient: HttpClient) { }
