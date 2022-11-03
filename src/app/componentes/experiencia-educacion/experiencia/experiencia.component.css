@@ -28,6 +28,7 @@ h2 {
   font-family: "mersadmedium";
   font-size: 4.9rem;
   letter-spacing: -0.2rem;
+  color: #fff;
 }
 
 h3 {
@@ -76,7 +77,7 @@ h6, p {
 section {
   padding-top: 5.9rem;
   padding-bottom: 4rem;
-  background-image: url(../../../../assets/degradado.jpg);
+  background-image: url(../../../../assets/fondoexp.webp);
 }
 
 .graphicIcon {

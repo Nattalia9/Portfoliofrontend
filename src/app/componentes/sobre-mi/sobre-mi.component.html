@@ -11,7 +11,7 @@
           {{persona.descripcion}}
         </p>
         <div class="d-flex justify-content-between">
-          <a class="nav-link" href="{{persona.urlPortfolioPdf}}" class="curriculum">Descargar CV</a> <!--*ngIf="!isLogged"-->
+          <a class="nav-link" href="{{persona.urlPortfolioPdf}}" class="curriculum" target="_blank">Descargar CV</a> <!--*ngIf="!isLogged"-->
           <div class="text-center pt-2">
             <a href="#" class="btn-editar cambios" title="Editar Sobre Mi" alt="editar" routerLink="/editsobrem/{{persona.id}}" *ngIf="isLogged"> <!-------------boton-editar---------->
               <i class="bi bi-pencil"></i>
