@@ -9,52 +9,56 @@
         </p>
       </div>
     </div>
-    <div class="row portfolio-container justify-content-center" *ngFor="let Proyecto of proy"><!-----------inicio contenedor de proyectos--------->
-      <!--Inicio de proyecto-->
-      <div class="col modal fade" tabindex="-1" id="identificador">
-        <div class="modal-dialog modal-lg position-relative modal-dialog-centered">
-          <div class="modal-content">
-            <button class="close" data-dismiss="modal">&times;</button>
-            <img src="{{Proyecto.urlImagen}}" alt="proyecto1" class="w-100"/><!---proyecto imagen-->
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="{{Proyecto.urlImagen}}" class="img-fluid rounded w-100"/><!--proyecto imagen--->
-          <div class="portfolio-info">
-            <h4>{{Proyecto.titulo}}</h4>
-            <p>{{Proyecto.descripcion}}</p>
-            <div class="portfolio-links">
-              <a href="" data-gall="portfolioGallery" data-toggle="modal" data-target="#identificador" class="venobox" title="Ampliar imagen">
-                <i class="bi bi-eye"></i>
-              </a>
-              <a href="{{Proyecto.urlRepositorio}}" title="Más detalles" target="_blank">
-                <i class="fa-brands fa-github repositorio"></i>
-              </a>
+    <div class="row portfolio-container justify-content-center">
+      <div class="col-lg-4 col-md-6" *ngFor="let Proyecto of proy"><!-----------inicio contenedor de proyectos--------->
+       <div class="row">
+          <!--Inicio de proyecto-->
+          <div class="col modal fade" tabindex="-1" id="identificador">
+            <div class="modal-dialog modal-lg position-relative modal-dialog-centered">
+              <div class="modal-content">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <img src="{{Proyecto.urlImagen}}" alt="proyecto1" class="w-100"/><!---proyecto imagen-->
+              </div>
             </div>
           </div>
-        </div>
-        <div class="d-flex justify-content-between title">
-          <div class="pb-2">
-            <h5 class="ml-2">{{Proyecto.titulo}}</h5>
-            <h6 class="ml-2">{{Proyecto.tecnologias}}</h6>
+          <div class="col-12 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{Proyecto.urlImagen}}" class="img-fluid rounded w-100"/><!--proyecto imagen--->
+              <div class="portfolio-info">
+                <h4>{{Proyecto.titulo}}</h4>
+                <p>{{Proyecto.descripcion}}</p>
+                <div class="portfolio-links">
+                  <a href="" data-gall="portfolioGallery" data-toggle="modal" data-target="#identificador" class="venobox" title="Ampliar imagen">
+                    <i class="bi bi-eye"></i>
+                  </a>
+                  <a href="{{Proyecto.urlRepositorio}}" title="Más detalles" target="_blank">
+                    <i class="fa-brands fa-github repositorio"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between title">
+              <div class="pb-2">
+                <h5 class="ml-2">{{Proyecto.titulo}}</h5>
+                <h6 class="ml-2">{{Proyecto.tecnologias}}</h6>
+              </div>
+              <span Class="arrow"><i class="fa-solid fa-caret-left"></i></span>
+            </div>
+            <!-------------botones de edición-------------->
+            <div class="text-center">
+              <a href="#" class="btn-editar cambios px-1" title="Editar Proyecto" alt="editar" routerLink="/editproy/{{Proyecto.id}}" *ngIf="isLogged"> <!-----boton editar-->
+                <i class="bi bi-pencil m"></i>
+              </a>
+              <a href="#" class="btn-eliminar cambios px-1" title="Eliminar Proyecto" alt="eliminar" (click)="delete(Proyecto.id)" *ngIf="isLogged"> <!-----boton eliminar-->
+                <i class="bi bi-trash3 m"></i>
+              </a>
+            </div>
+            <!-------------fin botones de edición------------->
           </div>
-          <span Class="arrow"><i class="fa-solid fa-caret-left"></i></span>
-        </div>
-        <!-------------botones de edición-------------->
-        <div class="text-center">
-          <a href="#" class="btn-editar cambios px-1" title="Editar Proyecto" alt="editar" routerLink="/editproy/{{Proyecto.id}}" *ngIf="isLogged"> <!-----boton editar-->
-            <i class="bi bi-pencil m"></i>
-          </a>
-          <a href="#" class="btn-eliminar cambios px-1" title="Eliminar Proyecto" alt="eliminar" (click)="delete(Proyecto.id)" *ngIf="isLogged"> <!-----boton eliminar-->
-            <i class="bi bi-trash3 m"></i>
-          </a>
-        </div>
-        <!-------------fin botones de edición------------->
-      </div>
-      <!--Final de proyecto-->
-    </div><!-----------Fin contenedor de proyectos--------->
+          <!--Final de proyecto-->
+       </div>
+      </div><!-----------Fin contenedor de proyectos--------->
+    </div>
     <!--botones de edicion-->
     <div class="col text-center">
       <a href="" class="btn-agregar"  title="Agregar Proyecto" alt="agregar" routerLink="/nuevoproy" *ngIf="isLogged"> <!------boton agregar------>
