@@ -7,7 +7,7 @@ Proyecto integrador desarrollado para el curso de Argentina Programa. En este po
 Acceda al 👉 [portfolio](https://natalia-rueda.web.app/).
 
 
-![] (https://github.com/Nattalia9/Portfoliofrontend/blob/master/web_nataliarueda1.gif?raw=true)
+![web_nataliarueda2](https://user-images.githubusercontent.com/100800513/200089141-b3608039-334f-4089-8445-9281b1f23a0d.gif)
 
 > Preview de Portfolio.
 
@@ -15,3 +15,4 @@ Acceda al 👉 [portfolio](https://natalia-rueda.web.app/).
 ### Tecnologías utilizadas 🛠️
 
 HTML5 / CSS / JavaScript / Bootstrap / Angular / Firebase
+
