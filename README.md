@@ -7,7 +7,7 @@ Proyecto integrador desarrollado para el curso de Argentina Programa. En este po
 Acceda al 👉 [portfolio](https://natalia-rueda.web.app/).
 
 
-![] (https://github.com/Nattalia9/Portfoliofrontend/blob/master/web_nataliarueda1.gif)
+![] (https://github.com/Nattalia9/Portfoliofrontend/blob/master/web_nataliarueda1.gif?raw=true)
 
 > Preview de Portfolio.
 
