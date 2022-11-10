@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit {
   constructor(private personaService: PersonaService, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data =>{this.persona = data})
+    this.personaService.detail(1).subscribe(data =>{this.persona = data})
 
     if(this.tokenService.getToken()){ //new1
       this.isLogged = true;

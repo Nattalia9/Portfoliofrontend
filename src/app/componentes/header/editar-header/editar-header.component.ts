@@ -21,7 +21,7 @@ export class EditarHeaderComponent implements OnInit {
         data =>{
           this.perso = data;
         }, err =>{
-          alert("Error al modificar header");
+          alert("Error al modificar");
           this.router.navigate(['']);
         }
       )
